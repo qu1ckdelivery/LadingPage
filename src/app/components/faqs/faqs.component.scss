@@ -1,0 +1,58 @@
+.container-faq{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+  .banner-faq{
+    border-radius: 10px;
+    padding: 50px 10px 50px 10px;
+    background: #E0E8FF;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .text-area{
+      width: 70%;
+
+      h1{
+       width: 100%;
+      }
+    }
+  }
+
+
+  .btn{
+    width: 200px;
+  }
+}
+
+.section-faq{
+  padding-top: 90px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+
+
+  .area-questions{
+    mat-panel-title{
+      padding: 20px;
+      font-size: 20px;
+      width: 300px;
+    }
+  }
+}
+
+@media(max-width:750px){
+  .banner-faq{
+    flex-direction: column;
+  }
+  .section-faq{
+    flex-direction: column;
+    .area-questions{
+      padding-top: 50px;
+    }
+  }
+}
