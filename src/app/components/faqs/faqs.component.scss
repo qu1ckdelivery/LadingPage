@@ -34,7 +34,9 @@
 
 
   .btn{
-    width: 200px;
+    border-radius: 30px;
+    height: 50px;
+    width: 180px;
     background: #ffffff;
     border: none;
     color: #E94534;
@@ -56,16 +58,14 @@
       padding: 20px;
       font-size: 20px;
       width: 300px;
+
     }
   }
 }
 
 
 
-mat-expansion-panel{
-  border-bottom: 1px solid rgba(255, 0, 0, 0);
-  box-shadow: 5px;
-}
+
 
 
 

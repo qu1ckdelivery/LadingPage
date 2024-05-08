@@ -26,6 +26,14 @@
       line-height: 30px;
       color: rgba(0, 0, 0, 0.377);
     }
+
+    .area-logo{
+      padding-bottom: 20px;
+      img{
+        width: 100px;
+
+      }
+    }
   }
 
   .area-right{
@@ -133,12 +141,12 @@
 .area-logo-ms{
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: left;
   width: 100% !important;
-  height: 100px !important;
+  height: 50px !important;
 
   img{
-    width: 250px;
+    width: 160px;
   }
 }
 
@@ -162,13 +170,10 @@
 
 @media(max-width:840px){
   .area-logo-ms{
-    justify-content: center;
+    justify-content: left;
   }
 
-  .container-footer{
 
-
-  }
   .box-footer{
     display: grid;
     padding: 30px;
@@ -199,6 +204,22 @@
     }
 
     .section-newsletter{
+      width: 400px !important;
+      .input-area{
+        width: 100% !important;
+
+        input{
+          height: 50px !important;
+          width: 100% !important;
+          border-radius: 40px !important;
+        }
+        i{
+          top: 19px !important;
+          left: 350px !important;
+        }
+
+      }
+
       p{
         width: 100%;
         text-align: left;
