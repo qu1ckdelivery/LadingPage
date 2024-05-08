@@ -1,4 +1,6 @@
 .container-faq{
+  margin-top: 100px;
+  margin-bottom:100px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -6,17 +8,26 @@
   .banner-faq{
     border-radius: 10px;
     padding: 50px 10px 50px 10px;
-    background: #E0E8FF;
-    width: 70%;
+    background: rgb(233,69,52);
+    background: radial-gradient(circle, rgba(233,69,52,1) 0%, rgba(198,157,210,1) 100%);
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     .text-area{
+      color: rgba(255, 255, 255, 0.842);
       width: 70%;
 
       h1{
        width: 100%;
+       font-size: 30px;
+       font-weight: 600;
+      }
+      p{
+        width: 60%;
+        font-weight: 500;
+        font-size: 15px;
       }
     }
   }
@@ -24,6 +35,10 @@
 
   .btn{
     width: 200px;
+    background: #ffffff;
+    border: none;
+    color: #E94534;
+    font-weight: 700;
   }
 }
 
@@ -45,9 +60,30 @@
   }
 }
 
+
+
+mat-expansion-panel{
+  border-bottom: 1px solid rgba(255, 0, 0, 0);
+  box-shadow: 5px;
+}
+
+
+
 @media(max-width:750px){
   .banner-faq{
     flex-direction: column;
+  }
+
+  .text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    p{
+      width: 100% !important;
+    }
   }
   .section-faq{
     flex-direction: column;

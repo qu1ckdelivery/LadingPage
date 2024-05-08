@@ -6,9 +6,10 @@
   justify-content: center;
   align-items: center;
   h1{
+    line-height: 50px;
     padding-top: 50px;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   p{
@@ -75,9 +76,19 @@
 
 }
 
+@media(min-width:1000px){
+  .container-fluid{
+    h1{
+      line-height: 10px;
+    }
+  }
+}
+
+
 @media(max-width:1010px){
   .features-area{
     grid-template-columns: repeat(2, 1fr);
   }
+
 
 }

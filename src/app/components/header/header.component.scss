@@ -7,20 +7,31 @@ nav
 }
 
 .container-nav{
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .navbar-brand{
-  font-size: 35px;
-  font-weight: 600;
-  padding-left: 80px;
-  color: rgba(255, 0, 0, 0.644);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
 }
 
 .navbar-nav{
   display: flex;
   justify-content: space-evenly;
   width: 400px;
+
+  .nav-link{
+    font-weight: 400;
+    font-size: 18px;
+  }
 }
 
 
@@ -32,25 +43,46 @@ nav
   justify-content: right;
   align-items: center;
 
+
       a{
-        color: rgba(0, 0, 0, 0.507);
-        font-size: 17px;
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
         text-decoration: none;
         margin: 20px;
+
       }
 
       .btn-download{
-        background-color: #0063EC;
+        background-color: #E94534;
         width: 130px;
         height: 50px;
         border-radius: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: ease 0.3s;
 
           a{
             color: white;
             text-decoration: none;
           }
+
+
       }
+      .btn-download:hover{
+        border: 1px solid #E94534;
+        background: white;
+        cursor: pointer;
+        a{
+          color: #E94534;
+        }
+      }
+}
+
+@media(max-width:993px){
+  .account-area{
+    width: 100%;
+    justify-content: left;
+  }
 }

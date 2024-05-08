@@ -54,6 +54,15 @@
     }
 }
 
+
+@media(min-width:1315px){
+  .about-area{
+    h1{
+      line-height: 50px;
+    }
+  }
+}
+
 @media(max-width:1260px){
   .row{
     width: 90%;
@@ -61,6 +70,7 @@
   .about-area{
     h1{
       font-size: 30px !important;
+      line-height: 40px;
     }
   }
 }
@@ -68,7 +78,7 @@
 @media(max-width:1310px){
   .about-area{
     h1{
-    
+
       font-size: 39px !important;
     }
   }
@@ -81,4 +91,5 @@
   .colum-right{
     display: none;
   }
+
 }

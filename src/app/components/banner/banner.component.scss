@@ -1,5 +1,8 @@
 .area-banner{
-  margin: 100px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .text-area{
@@ -8,6 +11,7 @@
         font-size: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
+        line-height: 50px;
       }
 
       h2{
@@ -32,9 +36,16 @@
     height: 50px;
     border-radius: 20px;
     padding-left: 30px;
+    padding-right: 30px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.295);
     margin-right: 20px;
+
+
+  }
+
+  input::placeholder{
+    font-size: 17px;
   }
 
   .btn{
@@ -43,12 +54,27 @@
     border-radius: 20px;
     font-size: 18px;
     font-weight: 700;
+    background-color: #E94534;
+    border: none;
+  }
+
+  .btn:hover{
+    border: 1px solid #E94534;
+    background: white;
+    cursor: pointer;
+    color: #E94534;
+
   }
 }
 
 .area-img{
-  min-width: 300px;
+  display: flex;
+  align-items: center;
+  height: 500px;
   img{
+    object-fit: contain;
+    width: 900px;
+
 
   }
 }
@@ -60,10 +86,21 @@
   }
 }
 
-@media(max-width:1121px){
-  .area-img{
-    img{
-      display: none;
+@media(max-width:1330px){
+  .text-area{
+    width: 100% !important;
+    text-align: center;
+
+
+    h3{
+      width: 100%;
+      text-align: center;
+      margin: auto;
     }
+  }
+
+  .colum-img{
+    display: none;
+
   }
 }
