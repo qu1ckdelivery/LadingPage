@@ -20,37 +20,31 @@
   </div>
 
   <div class="area-questions">
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Self aware panel
-          </mat-panel-title>
-
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Self aware panel
-          </mat-panel-title>
-
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Self aware panel
-          </mat-panel-title>
-
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-    </mat-accordion>
+    <ul class="accordion">
+      <li>
+        <input type="radio" name="accordion" id="first" checked>
+        <label for="first">Products</label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi commodi eaque sunt
+             ducimus mollitia iste harum aut repudiandae aspernatur.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="second">
+        <label for="second">Products</label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi commodi eaque sunt
+             ducimus mollitia iste harum aut repudiandae aspernatur.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="third">
+        <label for="third">Products</label>
+        <div class="content">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi commodi eaque sunt
+             ducimus mollitia iste harum aut repudiandae aspernatur.</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>

@@ -6,10 +6,15 @@
       </h2>
       <h1>Complete Tailwind CSS Template for SaaS Website</h1>
       <h3>Solid is a complete Tailwind CSS template crafted specially for SaaS, Software Mobile App and Web App Sites.</h3>
-      <div class="submit-form">
-        <input type="text" placeholder="Enter your email adress">
-        <button type="button" class="btn btn-dark">Get Started</button>
-      </div>
+      <form (submit)="createPost()" class="submit-form">
+        <input type="email" placeholder="Enter your email address" [(ngModel)]="postData.email" name="email"
+         [ngClass]="{'success-border': emailSent, 'error-border': emailInvalid}">
+        <button type="submit" class="btn btn-dark">Get Started</button>
+      </form>
+      <span *ngIf="emailSent" class="success-message">Email enviado com sucesso!</span>
+      <span *ngIf="postData.email && emailInvalid" class="error-message">Email com formato inválido!</span>
+      <span *ngIf="postData.email && apiError" class="error-message">Erro ao tentar enviar email, tente novamente mais tarde!</span>
+
     </div>
     <div class="col colum-img">
       <div class="area-img">

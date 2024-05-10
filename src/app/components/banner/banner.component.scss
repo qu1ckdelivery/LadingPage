@@ -38,11 +38,22 @@
     padding-left: 30px;
     padding-right: 30px;
     outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.295);
+    border: 1px solid rgba(0, 0, 0, 0.747);
     margin-right: 20px;
 
 
   }
+
+  .success-border {
+    border: 2px solid #BBF075; // Define a cor da borda como verde
+  }
+
+  .error-border {
+    border: 2px solid red; // Define a cor da borda como vermelho para indicar um formato de email inválido
+  }
+
+
+
 
   input::placeholder{
     font-size: 17px;
@@ -65,6 +76,21 @@
     color: #E94534;
 
   }
+}
+
+.success-message{
+  line-height: 30px;
+ padding-left: 20px;
+ width: 200px;
+  color: rgba(0, 0, 0, 0.493);
+}
+
+
+
+.error-message {
+  color: red; // Define a cor do texto como vermelho
+  line-height: 30px;
+   padding-left: 20px;
 }
 
 .area-img{
