@@ -19,7 +19,7 @@ export class BannerComponent {
   apiError = false;
 
 
-  private url = 'https://qu1ckapp-n8n.mp0f7m.easypanel.host/webhook/90facb6a-da00-4939-ba5b-47863de70fb3'
+  private url = 'https://qu1ckapp-n8n.mp0f7m.easypanel.host/webhook-test/90facb6a-da00-4939-ba5b-47863de70fb3'
 
   constructor(private httpClient: HttpClient) {}
 
